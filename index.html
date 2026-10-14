@@ -4,27 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CEFRAM - Centro Escolar General Francisco Morazán</title>
-  <link rel="stylesheet" href="estilos.css">
+  <script>document.documentElement.classList.add('js-loading');</script>
+  <link rel="preload" as="image" href="assets/img/cefram2.webp">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+  <script src="assets/js/cargando.js" defer></script>
+  <script src="assets/js/banner-inicio.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="home-page">
+  <div class="page-skeleton" role="status" aria-label="Cargando página">
+    <div class="skeleton-topbar"></div>
+    <div class="skeleton-brand"><i></i><span><b></b><b></b></span></div>
+    <div class="skeleton-nav"><i></i><i></i><i></i><i></i><i></i></div>
+    <main class="skeleton-content"><div class="skeleton-banner"><i></i><i></i><i></i></div><div class="skeleton-heading"></div><div class="skeleton-copy"><i></i><i></i></div><div class="skeleton-cards"><i></i><i></i><i></i></div></main>
+  </div>
 
   <div class="top-bar">
     <div class="top-bar-info">
-      <span><img src="telefono.png" alt="" class="contact-icon"> +503 2222-0000</span>
-      <span><img src="correo.png" alt="" class="contact-icon"> info@cefram.edu.sv</span>
+      <span><img src="assets/sprites/telefono.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> +503 7248-3493</span>
+      <span><img src="assets/sprites/correo.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> 11532@clases.edu.sv</span>
     </div>
     <div class="top-bar-links">
-      <a href="https://www.facebook.com/cefram.morazan/" target="_blank" rel="noopener noreferrer" aria-label="Facebook oficial de CEFRAM"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/50370000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/p/Centro-Escolar-General-Francisco-Morazan-100063652112825/?locale=es_LA" target="_blank" rel="noopener noreferrer" aria-label="Facebook oficial de CEFRAM"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/cefram11532/" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial de CEFRAM"><i class="fab fa-instagram" aria-hidden="true"></i></a>
     </div>
   </div>
 
   <header>
     <div class="nav-container">
       <a href="index.html" class="logo-container">
-        <div class="logo-icon"><img src="logo.jpg" alt=""></div>
+        <div class="logo-icon"><img src="assets/img/logo.webp" alt="" loading="lazy" decoding="async"></div>
         <div class="brand-text">
           <h1>CEFRAM</h1>
           <span>Centro Escolar General Francisco Morazán</span>
@@ -38,17 +47,8 @@
       <li><a href="index.html" class="active" aria-current="page">Inicio</a></li>
       <li><a href="Quienes Somos.html">Quiénes somos</a></li>
       <li><a href="Actividades.html">Actividades</a></li>
-      <li class="dropdown">
-        <a href="Servicios Educativos.html">Servicios educativos ▾</a>
-        <ul class="dropdown-menu">
-          <li><a href="Servicios Educativos.html">Todos los servicios</a></li>
-          <li><a href="Educación Basica.html">Educación básica</a></li>
-          <li><a href="Bachilleratos.html">Bachilleratos</a></li>
-          <li><a href="Bachillerato_General.html">Bachillerato general</a></li>
-          <li><a href="Bachillerato-Técnico_Vocacional.html">Bachillerato técnico vocacional</a></li>
-          <li><a href="Bachillerato-Técnico-Productivo.html">Bachillerato técnico productivo</a></li>
-        </ul>
-      </li>
+      <li><a href="Autoridades.html">Autoridades</a></li>
+      <li><a href="Servicios Educativos.html">Servicios educativos</a></li>
     </ul>
   </nav>
 
@@ -59,7 +59,6 @@
       <p>Educación, valores y nuevas oportunidades para nuestra comunidad. En CEFRAM acompañamos a nuestros estudiantes en cada etapa de su formación.</p>
       <div class="hero-buttons">
         <a href="Servicios Educativos.html" class="btn btn-primary">Conoce nuestra oferta</a>
-        <a href="#oferta-educativa" class="btn btn-secondary">Explora el sitio</a>
       </div>
     </div>
   </section>
@@ -119,6 +118,17 @@
       </div>
     </div>
   </section>
+
+  <section class="home-promo" aria-label="Anuncios de CEFRAM">
+    <div class="home-promo-banners" aria-live="off">
+      <figure class="home-promo-slide">
+        <img src="assets/img/banner-matricula-2027.webp" alt="Matrícula abierta 2027 en CEFRAM" loading="lazy" decoding="async">
+      </figure>
+      <figure class="home-promo-slide" hidden>
+        <img src="assets/img/banner-reparacion-computadoras.webp" alt="¿Computadora dañada? Tráela a CEFRAM y la reparamos" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
   </main>
 
   <footer>
@@ -137,15 +147,14 @@
           <li><a href="Educación Basica.html">Educación básica</a></li>
           <li><a href="Bachilleratos.html">Bachilleratos</a></li>
           <li><a href="Servicios Educativos.html">Servicios educativos</a></li>
-          <li><a href="Quienes Somos.html">Quiénes somos</a></li>
-          <li><a href="Actividades.html">Actividades</a></li>
+          <li><a href="Autoridades.html">Autoridades</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Visítanos</h4>
-        <p class="contact-line"><img src="ubicacion.png" alt="" class="contact-icon"> San Salvador, El Salvador</p>
-        <p class="contact-line"><img src="telefono.png" alt="" class="contact-icon"> +503 2222-0000</p>
-        <p class="contact-line"><img src="correo.png" alt="" class="contact-icon"> info@cefram.edu.sv</p>
+        <p class="contact-line"><img src="assets/sprites/ubicacion.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> San Salvador, El Salvador</p>
+        <p class="contact-line"><img src="assets/sprites/telefono.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> +503 7248-3493</p>
+        <p class="contact-line"><img src="assets/sprites/correo.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> 11532@clases.edu.sv</p>
       </div>
     </div>
     <div class="footer-bottom">

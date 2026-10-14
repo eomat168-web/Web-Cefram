@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bachillerato Técnico Vocacional - CEFRAM</title>
-    <link rel="stylesheet" href="estilos.css">
+    <script>document.documentElement.classList.add('js-loading');</script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="assets/js/cargando.js" defer></script>
 </head>
 <body>
+    <div class="page-skeleton" role="status" aria-label="Cargando página">
+        <div class="skeleton-topbar"></div>
+        <div class="skeleton-brand"><i></i><span><b></b><b></b></span></div>
+        <div class="skeleton-nav"><i></i><i></i><i></i><i></i><i></i></div>
+        <main class="skeleton-content"><div class="skeleton-banner"><i></i><i></i><i></i></div><div class="skeleton-heading"></div><div class="skeleton-copy"><i></i><i></i></div><div class="skeleton-cards"><i></i><i></i><i></i></div></main>
+    </div>
     <header>
         <div class="logo-container">
             <div class="logo-icon">🐿️</div>
@@ -22,16 +30,8 @@
             <li><a href="index.html">INICIO</a></li>
             <li><a href="Quienes Somos.html">QUIÉNES SOMOS</a></li>
             <li><a href="Actividades.html">ACTIVIDADES</a></li>
-            <li class="dropdown">
-                <a href="Servicios Educativos.html" class="dropdown-btn active">SERVICIOS EDUCATIVOS ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="Educación Basica.html">EDUCACIÓN BÁSICA</a></li>
-                    <li><a href="Bachilleratos.html">BACHILLERATOS</a></li>
-                    <li><a href="Bachillerato_General.html">BACHILLERATO GENERAL</a></li>
-                    <li><a href="Bachillerato-Técnico_Vocacional.html" class="sub-active" aria-current="page">BACHILLERATO TÉCNICO VOCACIONAL</a></li>
-                    <li><a href="Bachillerato-Técnico-Productivo.html">BACHILLERATO TÉCNICO PRODUCTIVO</a></li>
-                </ul>
-            </li>
+            <li><a href="Autoridades.html">AUTORIDADES</a></li>
+            <li><a href="Servicios Educativos.html" class="active">SERVICIOS EDUCATIVOS</a></li>
         </ul>
     </nav>
 
@@ -39,38 +39,51 @@
         <a href="Bachilleratos.html" class="btn-regresar">← Volver a Bachilleratos</a>
         
         <section class="encabezado-detalle">
-            <div class="icono-detalle">💻</div>
+            <div class="icono-detalle"><img src="assets/sprites/computadora.webp" alt=""></div>
             <h2>Bachillerato Técnico Vocacional</h2>
             <p>Formación especializada para desarrollar habilidades técnicas y académicas vinculadas con el mundo laboral.</p>
         </section>
 
-        <!-- Galería de Fotos de la Especialidad -->
-        <section class="galeria-seccion">
-            <h3>Fotos de la Especialidad</h3>
-            <div class="grid-fotos">
-                <div class="contenedor-foto">
-                    <img src="FOTO1.jpeg" alt="Laboratorio de Cómputo">
+        <div class="especialidades-tecnicas">
+            <section class="especialidad-bloque" aria-labelledby="software-titulo">
+                <div class="especialidad-contenido">
+                    <span class="especialidad-numero">01</span>
+                    <h3 id="software-titulo">Desarrollo de Software</h3>
+                    <p>Esta especialidad desarrolla conocimientos de programación, bases de datos y desarrollo web para diseñar soluciones tecnológicas. El estudiantado aprende a analizar necesidades, organizar información y construir proyectos paso a paso, fortaleciendo también la lógica y la resolución de problemas.</p>
+                    <p>Como parte de su acercamiento práctico a la tecnología, cuenta con acceso a áreas de computación y experiencias relacionadas con robótica e impresión 3D. Así puede explorar distintas herramientas y conectar lo aprendido con proyectos concretos.</p>
                 </div>
-                <div class="contenedor-foto">
-                    <img src="FOTO2.jpeg" alt="Prácticas Contables">
-                </div>
-            </div>
-        </section>
+                <section class="galeria-especialidad" aria-labelledby="software-galeria">
+                    <h4 id="software-galeria">Galería de Desarrollo de Software</h4>
+                    <div class="grid-fotos">
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/IMG_6577.webp" alt="Estudiantes del área de Desarrollo de Software" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/IMG_6585.webp" alt="Grupo de estudiantes de Desarrollo de Software" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/IMG_7780.webp" alt="Robot educativo utilizado en actividades de informática" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+                </section>
+            </section>
 
-        <!-- Detalle de Especialidades -->
-        <section class="informacion-detalle">
-            <h3>Especialidades Disponibles</h3>
-            <div class="tarjetas-especialidades">
-                <div class="item-especialidad">
-                    <h4>Desarrollo de Software</h4>
-                    <p>Capacitación en programación, bases de datos y desarrollo web para crear soluciones tecnológicas. El aprendizaje combina fundamentos y práctica para fortalecer la capacidad de resolver problemas.</p>
+            <section class="especialidad-bloque" aria-labelledby="contable-titulo">
+                <div class="especialidad-contenido">
+                    <span class="especialidad-numero">02</span>
+                    <h3 id="contable-titulo">Asistente Contable</h3>
+                    <p>La formación aborda procesos financieros, registros contables, normativas tributarias y herramientas administrativas. A través de estos contenidos, el estudiantado fortalece la organización, la precisión y la responsabilidad necesarias para apoyar las tareas contables de una institución o empresa.</p>
                 </div>
-                <div class="item-especialidad">
-                    <h4>Asistente Contable</h4>
-                    <p>Formación en procesos financieros, gestión de libros contables, normativas tributarias y herramientas administrativas. Se desarrollan habilidades de organización, precisión y responsabilidad.</p>
-                </div>
-            </div>
-        </section>
+                <section class="galeria-especialidad" aria-labelledby="contable-galeria">
+                    <h4 id="contable-galeria">Galería de Asistente Contable</h4>
+                    <div class="grid-fotos">
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/contabilidad-estudiantes.webp" alt="Estudiantes de Asistente Contable" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+                </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -89,9 +102,9 @@
             </div>
             <div class="footer-col">
                 <h4>Contáctanos</h4>
-                <p class="contact-line"><img src="ubicacion.png" alt="" class="contact-icon"> San Salvador, El Salvador</p>
-                <p class="contact-line"><img src="telefono.png" alt="" class="contact-icon"> +503 2222-0000</p>
-                <p class="contact-line"><img src="correo.png" alt="" class="contact-icon"> info@cefram.edu.sv</p>
+                <p class="contact-line"><img src="assets/sprites/ubicacion.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> San Salvador, El Salvador</p>
+                <p class="contact-line"><img src="assets/sprites/telefono.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> +503 7248-3493</p>
+                <p class="contact-line"><img src="assets/sprites/correo.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> 11532@clases.edu.sv</p>
             </div>
         </div>
         <div class="footer-bottom"><p>&copy; 2026 CEFRAM - Centro Escolar General Francisco Morazán.</p></div>

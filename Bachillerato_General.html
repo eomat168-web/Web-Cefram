@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bachillerato General - CEFRAM</title>
-    <link rel="stylesheet" href="estilos.css">
+    <script>document.documentElement.classList.add('js-loading');</script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="assets/js/cargando.js" defer></script>
 </head>
 <body>
+    <div class="page-skeleton" role="status" aria-label="Cargando página">
+        <div class="skeleton-topbar"></div>
+        <div class="skeleton-brand"><i></i><span><b></b><b></b></span></div>
+        <div class="skeleton-nav"><i></i><i></i><i></i><i></i><i></i></div>
+        <main class="skeleton-content"><div class="skeleton-banner"><i></i><i></i><i></i></div><div class="skeleton-heading"></div><div class="skeleton-copy"><i></i><i></i></div><div class="skeleton-cards"><i></i><i></i><i></i></div></main>
+    </div>
     <header>
         <div class="logo-container">
             <div class="logo-icon">🐿️</div>
@@ -22,16 +30,8 @@
             <li><a href="index.html">INICIO</a></li>
             <li><a href="Quienes Somos.html">QUIÉNES SOMOS</a></li>
             <li><a href="Actividades.html">ACTIVIDADES</a></li>
-            <li class="dropdown">
-                <a href="Servicios Educativos.html" class="dropdown-btn active">SERVICIOS EDUCATIVOS ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="Educación Basica.html">EDUCACIÓN BÁSICA</a></li>
-                    <li><a href="Bachilleratos.html">BACHILLERATOS</a></li>
-                    <li><a href="Bachillerato_General.html" class="sub-active" aria-current="page">BACHILLERATO GENERAL</a></li>
-                    <li><a href="Bachillerato-Técnico_Vocacional.html">BACHILLERATO TÉCNICO VOCACIONAL</a></li>
-                    <li><a href="Bachillerato-Técnico-Productivo.html">BACHILLERATO TÉCNICO PRODUCTIVO</a></li>
-                </ul>
-            </li>
+            <li><a href="Autoridades.html">AUTORIDADES</a></li>
+            <li><a href="Servicios Educativos.html" class="active">SERVICIOS EDUCATIVOS</a></li>
         </ul>
     </nav>
 
@@ -49,20 +49,21 @@
             <h3> Bachillerato General</h3>
             <div class="grid-fotos">
                 <div class="contenedor-foto">
-                    <img src="FOTO3.jpeg" alt="Instalaciones o Actividades">
+                    <img src="assets/img/FOTO3.webp" alt="Instalaciones o Actividades" loading="lazy" decoding="async">
                 </div>
                 <div class="contenedor-foto">
-                    <img src="FOTO5.jpeg" alt="Instalaciones o Actividades">
+                    <img src="assets/img/FOTO5.webp" alt="Instalaciones o Actividades" loading="lazy" decoding="async">
                 </div>
                 <div class="contenedor-foto">
-                    <img src="FOTO4.jpeg" alt="Instalaciones o Actividades">
+                    <img src="assets/img/FOTO4.webp" alt="Instalaciones o Actividades" loading="lazy" decoding="async">
                 </div>
             </div>
         </section>
 
         <section class="informacion-detalle">
             <h3>Sobre este programa</h3>
-            <p>El Bachillerato General brinda una preparación integral en áreas científicas, humanísticas y tecnológicas. A través del estudio y el pensamiento crítico, sus estudiantes fortalecen las bases para continuar su formación académica y afrontar nuevos retos.</p>
+            <p>El Bachillerato General brinda una preparación integral en áreas científicas, humanísticas y tecnológicas. El recorrido académico permite relacionar conocimientos de distintas materias, expresar ideas con claridad y fortalecer hábitos de estudio.</p>
+            <p>Mediante el análisis, la investigación y el pensamiento crítico, sus estudiantes desarrollan bases para continuar su formación académica, explorar nuevas áreas de interés y afrontar retos dentro y fuera del aula.</p>
         </section>
     </main>
     <footer>
@@ -82,9 +83,9 @@
             </div>
             <div class="footer-col">
                 <h4>Contáctanos</h4>
-                <p class="contact-line"><img src="ubicacion.png" alt="" class="contact-icon"> San Salvador, El Salvador</p>
-                <p class="contact-line"><img src="telefono.png" alt="" class="contact-icon"> +503 2222-0000</p>
-                <p class="contact-line"><img src="correo.png" alt="" class="contact-icon"> info@cefram.edu.sv</p>
+                <p class="contact-line"><img src="assets/sprites/ubicacion.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> San Salvador, El Salvador</p>
+                <p class="contact-line"><img src="assets/sprites/telefono.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> +503 7248-3493</p>
+                <p class="contact-line"><img src="assets/sprites/correo.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> 11532@clases.edu.sv</p>
             </div>
         </div>
         <div class="footer-bottom"><p>&copy; 2026 CEFRAM - Centro Escolar General Francisco Morazán.</p></div>

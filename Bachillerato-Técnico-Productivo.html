@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bachillerato Técnico Productivo - CEFRAM</title>
-    <link rel="stylesheet" href="estilos.css">
+    <script>document.documentElement.classList.add('js-loading');</script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="assets/js/cargando.js" defer></script>
 </head>
 <body>
+    <div class="page-skeleton" role="status" aria-label="Cargando página">
+        <div class="skeleton-topbar"></div>
+        <div class="skeleton-brand"><i></i><span><b></b><b></b></span></div>
+        <div class="skeleton-nav"><i></i><i></i><i></i><i></i><i></i></div>
+        <main class="skeleton-content"><div class="skeleton-banner"><i></i><i></i><i></i></div><div class="skeleton-heading"></div><div class="skeleton-copy"><i></i><i></i></div><div class="skeleton-cards"><i></i><i></i><i></i></div></main>
+    </div>
     <header>
         <div class="logo-container">
             <div class="logo-icon">🐿️</div>
@@ -22,16 +30,8 @@
             <li><a href="index.html">INICIO</a></li>
             <li><a href="Quienes Somos.html">QUIÉNES SOMOS</a></li>
             <li><a href="Actividades.html">ACTIVIDADES</a></li>
-            <li class="dropdown">
-                <a href="Servicios Educativos.html" class="dropdown-btn active">SERVICIOS EDUCATIVOS ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="Educación Basica.html">EDUCACIÓN BÁSICA</a></li>
-                    <li><a href="Bachilleratos.html">BACHILLERATOS</a></li>
-                    <li><a href="Bachillerato_General.html">BACHILLERATO GENERAL</a></li>
-                    <li><a href="Bachillerato-Técnico_Vocacional.html">BACHILLERATO TÉCNICO VOCACIONAL</a></li>
-                    <li><a href="Bachillerato-Técnico-Productivo.html" class="sub-active" aria-current="page">BACHILLERATO TÉCNICO PRODUCTIVO</a></li>
-                </ul>
-            </li>
+            <li><a href="Autoridades.html">AUTORIDADES</a></li>
+            <li><a href="Servicios Educativos.html" class="active">SERVICIOS EDUCATIVOS</a></li>
         </ul>
     </nav>
 
@@ -39,36 +39,57 @@
         <a href="Bachilleratos.html" class="btn-regresar">← Volver a Bachilleratos</a>
         
         <section class="encabezado-detalle">
-            <div class="icono-detalle">🌐</div>
+            <div class="icono-detalle"><img src="assets/sprites/mundo.webp" alt=""></div>
             <h2>Bachillerato Técnico Productivo</h2>
             <p>Una preparación práctica vinculada con actividades del sector productivo y las oportunidades del entorno laboral.</p>
         </section>
 
-        <section class="galeria-seccion">
-            <h3>Fotos de la Especialidad</h3>
-            <div class="grid-fotos">
-                <div class="contenedor-foto">
-                    <img src="FOTO8.jpeg" alt="Servicios Turísticos">
+        <div class="especialidades-tecnicas">
+            <section class="especialidad-bloque" aria-labelledby="turismo-titulo">
+                <div class="especialidad-contenido">
+                    <span class="especialidad-numero">01</span>
+                    <h3 id="turismo-titulo">Servicios Turísticos</h3>
+                    <p>Esta especialidad prepara para conocer y apoyar servicios de hospitalidad, agencias de viajes, guiado y actividades turísticas. Se desarrollan habilidades de atención, comunicación y conocimiento del entorno para ofrecer experiencias cuidadas a visitantes y viajeros.</p>
+                    <p>El aprendizaje se complementa con acceso a la cocina para realizar prácticas vinculadas con la preparación y el servicio de alimentos, y con la posibilidad de participar en prácticas remuneradas.</p>
                 </div>
-                <div class="contenedor-foto">
-                    <img src="FOTO7.jpeg" alt="Logística Global Comercial">
-                </div>
-            </div>
-        </section>
+                <section class="galeria-especialidad" aria-labelledby="turismo-galeria">
+                    <h4 id="turismo-galeria">Galería de Servicios Turísticos</h4>
+                    <div class="grid-fotos">
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/IMG_7784.webp" alt="Pastel preparado por estudiantes" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/IMG_7786.webp" alt="Estudiante preparando la masa del pastel" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/IMG_7791.webp" alt="Estudiante mostrando el pastel preparado" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+                </section>
+            </section>
 
-        <section class="informacion-detalle">
-            <h3>Especialidades:</h3>
-            <div class="tarjetas-especialidades">
-                <div class="item-especialidad">
-                    <h4>Servicios Turísticos</h4>
-                    <p>Formación enfocada en la gestión de servicios de hospitalidad, agencias de viajes, guiado y dinamización del sector turístico. Promueve la atención, la comunicación y el conocimiento del entorno.</p>
+            <section class="especialidad-bloque" aria-labelledby="logistica-titulo">
+                <div class="especialidad-contenido">
+                    <span class="especialidad-numero">02</span>
+                    <h3 id="logistica-titulo">Logística Global Comercial</h3>
+                    <p>La especialidad introduce los procesos que permiten trasladar productos desde su origen hasta su destino. Incluye contenidos sobre cadenas de suministro, operaciones aduaneras, gestión de inventarios y transporte de mercancías, además de fortalecer la organización y la comprensión del comercio global.</p>
                 </div>
-                <div class="item-especialidad">
-                    <h4>Logística Global Comercial</h4>
-                    <p>Capacitación en cadenas de suministro, operaciones aduaneras, gestión de inventarios y transporte de mercancías. Se fortalecen la organización y la comprensión de los procesos comerciales.</p>
-                </div>
-            </div>
-        </section>
+                <section class="galeria-especialidad" aria-labelledby="logistica-galeria">
+                    <h4 id="logistica-galeria">Galería de Logística Global Comercial</h4>
+                    <div class="grid-fotos">
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/logistica-estudiantes-1.webp" alt="Estudiantes de Logística Global Comercial" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/logistica-estudiantes-2.webp" alt="Estudiantes de Logística Global Comercial" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/logistica-estudiantes-3.webp" alt="Estudiantes de Logística Global Comercial" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
+                </section>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="footer-container">
@@ -87,9 +108,9 @@
             </div>
             <div class="footer-col">
                 <h4>Contáctanos</h4>
-                <p class="contact-line"><img src="ubicacion.png" alt="" class="contact-icon"> San Salvador, El Salvador</p>
-                <p class="contact-line"><img src="telefono.png" alt="" class="contact-icon"> +503 2222-0000</p>
-                <p class="contact-line"><img src="correo.png" alt="" class="contact-icon"> info@cefram.edu.sv</p>
+                <p class="contact-line"><img src="assets/sprites/ubicacion.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> San Salvador, El Salvador</p>
+                <p class="contact-line"><img src="assets/sprites/telefono.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> +503 7248-3493</p>
+                <p class="contact-line"><img src="assets/sprites/correo.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> 11532@clases.edu.sv</p>
             </div>
         </div>
         <div class="footer-bottom"><p>&copy; 2026 CEFRAM - Centro Escolar General Francisco Morazán.</p></div>

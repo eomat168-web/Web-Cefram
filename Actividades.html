@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividades - CEFRAM</title>
-    <link rel="stylesheet" href="estilos.css">
+    <script>document.documentElement.classList.add('js-loading');</script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="assets/js/cargando.js" defer></script>
 </head>
 <body>
+    <div class="page-skeleton" role="status" aria-label="Cargando página">
+        <div class="skeleton-topbar"></div>
+        <div class="skeleton-brand"><i></i><span><b></b><b></b></span></div>
+        <div class="skeleton-nav"><i></i><i></i><i></i><i></i><i></i></div>
+        <main class="skeleton-content"><div class="skeleton-banner"><i></i><i></i><i></i></div><div class="skeleton-heading"></div><div class="skeleton-copy"><i></i><i></i></div><div class="skeleton-cards"><i></i><i></i><i></i></div></main>
+    </div>
     <header>
         <div class="logo-container">
             <div class="logo-icon">CE</div>
@@ -22,16 +30,8 @@
             <li><a href="index.html">INICIO</a></li>
             <li><a href="Quienes Somos.html">QUIÉNES SOMOS</a></li>
             <li><a href="Actividades.html" class="active" aria-current="page">ACTIVIDADES</a></li>
-            <li class="dropdown">
-                <a href="Servicios Educativos.html">SERVICIOS EDUCATIVOS ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="Educación Basica.html">EDUCACIÓN BÁSICA</a></li>
-                    <li><a href="Bachilleratos.html">BACHILLERATOS</a></li>
-                    <li><a href="Bachillerato_General.html">BACHILLERATO GENERAL</a></li>
-                    <li><a href="Bachillerato-Técnico_Vocacional.html">BACHILLERATO TÉCNICO VOCACIONAL</a></li>
-                    <li><a href="Bachillerato-Técnico-Productivo.html">BACHILLERATO TÉCNICO PRODUCTIVO</a></li>
-                </ul>
-            </li>
+            <li><a href="Autoridades.html">AUTORIDADES</a></li>
+            <li><a href="Servicios Educativos.html">SERVICIOS EDUCATIVOS</a></li>
         </ul>
     </nav>
 
@@ -43,10 +43,23 @@
     </section>
 
     <main class="page-container activities-page">
+        <figure class="extracurricular-banner">
+            <img src="assets/img/extracurricular-banner.webp" alt="Estudiantes de CEFRAM participan en actividades artísticas y cívicas" decoding="async">
+        </figure>
+
         <section class="detail-card activity-intro">
             <span class="section-kicker">Comunidad y tradición</span>
             <h2>Momentos que nos unen</h2>
             <p>Las actividades escolares son una oportunidad para aprender fuera del aula, colaborar y expresar el orgullo de ser parte de CEFRAM. Entre ellas, las celebraciones cívicas reúnen a estudiantes, docentes y familias alrededor de nuestra historia e identidad salvadoreña.</p>
+        </section>
+
+        <section class="activity-section extracurricular-cta" aria-labelledby="extracurricular-heading">
+            <div class="activity-heading">
+                <span class="section-kicker">Talento y participación</span>
+                <h2 id="extracurricular-heading">Actividades extracurriculares</h2>
+                <p>Además de nuestras celebraciones y actividades escolares, CEFRAM ofrece espacios artísticos, musicales y deportivos para que sus estudiantes desarrollen sus talentos y compartan en comunidad.</p>
+                <a class="source-link" href="#proyectos-extracurriculares">Conocer los proyectos y actividades <span aria-hidden="true">↓</span></a>
+            </div>
         </section>
 
         <section class="activity-section facebook-section" aria-labelledby="facebook-heading">
@@ -86,18 +99,18 @@
                 <p>Las presentaciones, los uniformes y el entusiasmo de los participantes reflejaron el esfuerzo de estudiantes, docentes y familias por mantener vivas nuestras tradiciones.</p>
                 <a class="source-link" href="https://www.facebook.com/cefram.morazan/" target="_blank" rel="noopener noreferrer">Ver publicaciones en Facebook</a>
             </div>
-            <div class="activity-gallery" aria-label="Espacios para agregar fotos del desfile">
+            <div class="activity-gallery" aria-label="Galería del desfile de Independencia">
                 <figure class="photo-slot">
-                    <div class="photo-placeholder" aria-label="Espacio para agregar una foto del desfile"></div>
-                    <figcaption>Foto del desfile de Independencia</figcaption>
+                    <img src="assets/img/desfile-independencia-2536.webp" alt="Estudiantes de CEFRAM participan en el desfile de Independencia" loading="lazy" decoding="async">
+                    <figcaption>Estudiantes de CEFRAM en el desfile</figcaption>
                 </figure>
                 <figure class="photo-slot">
-                    <div class="photo-placeholder" aria-label="Espacio para agregar una foto de la banda o danza"></div>
-                    <figcaption>Banda, cachiporras o grupo de danza</figcaption>
+                    <img src="assets/img/desfile-independencia-2396.webp" alt="Grupo de danza de CEFRAM durante el desfile de Independencia" loading="lazy" decoding="async">
+                    <figcaption>Grupo de danza de CEFRAM</figcaption>
                 </figure>
                 <figure class="photo-slot">
-                    <div class="photo-placeholder" aria-label="Espacio para agregar una foto de la comunidad CEFRAM"></div>
-                    <figcaption>Comunidad educativa CEFRAM</figcaption>
+                    <img src="assets/img/desfile-independencia-2514.webp" alt="Integrantes de la banda escolar de CEFRAM en el desfile" loading="lazy" decoding="async">
+                    <figcaption>Banda escolar de CEFRAM</figcaption>
                 </figure>
             </div>
         </section>
@@ -107,23 +120,166 @@
                 <span class="section-kicker">Celebración de nuestra identidad</span>
                 <h2>Semana Cívica</h2>
                 <p>La Semana Cívica es un espacio para acercar a los estudiantes a la historia, los símbolos y las tradiciones de El Salvador. Con actos y expresiones culturales, la comunidad escolar puede compartir sus aprendizajes y celebrar el orgullo de pertenecer a nuestro país.</p>
-                <p>Agregaremos aquí los recuerdos y detalles de las actividades cívicas de CEFRAM.</p>
             </div>
-            <div class="activity-gallery" aria-label="Espacios para agregar fotos de la Semana Cívica">
+            <div class="activity-gallery" aria-label="Galería de la Semana Cívica">
                 <figure class="photo-slot">
-                    <div class="photo-placeholder" aria-label="Espacio para agregar una foto de la Semana Cívica"></div>
-                    <figcaption>Acto de la Semana Cívica</figcaption>
+                    <img src="assets/img/semana-civica-costa-rica.webp" alt="Decoración cívica con los colores y la bandera de Costa Rica" loading="lazy" decoding="async">
+                    <figcaption>Decoración cívica: Costa Rica</figcaption>
                 </figure>
                 <figure class="photo-slot">
-                    <div class="photo-placeholder" aria-label="Espacio para agregar una foto de una presentación cívica"></div>
-                    <figcaption>Presentación de estudiantes</figcaption>
+                    <img src="assets/img/semana-civica-independencia.webp" alt="Decoración escolar conmemorativa de los 205 años de Independencia" loading="lazy" decoding="async">
+                    <figcaption>205 años de Independencia</figcaption>
                 </figure>
                 <figure class="photo-slot">
-                    <div class="photo-placeholder" aria-label="Espacio para agregar una foto de los símbolos patrios"></div>
-                    <figcaption>Tradiciones y símbolos patrios</figcaption>
+                    <img src="assets/img/semana-civica-honduras.webp" alt="Estudiantes en una presentación cívica con la bandera de Honduras" loading="lazy" decoding="async">
+                    <figcaption>Presentación cívica: Honduras</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/semana-civica-nicaragua.webp" alt="Estudiantes durante una presentación cívica dedicada a Nicaragua" loading="lazy" decoding="async">
+                    <figcaption>Presentación cívica: Nicaragua</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/semana-civica-desfile-bandera.webp" alt="Estudiantes portan banderas durante una actividad cívica" loading="lazy" decoding="async">
+                    <figcaption>Participación de estudiantes en el acto cívico</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/semana-civica-danza-folclorica.webp" alt="Estudiantes presentan una danza folclórica con trajes tradicionales" loading="lazy" decoding="async">
+                    <figcaption>Presentación de danza folclórica</figcaption>
                 </figure>
             </div>
             <a class="source-link" href="https://www.facebook.com/cefram.morazan/" target="_blank" rel="noopener noreferrer">Consulta las novedades en el Facebook de CEFRAM</a>
+        </section>
+
+        <section class="activity-section extracurricular-group" id="proyectos-extracurriculares" aria-labelledby="proyectos-heading">
+            <div class="activity-heading">
+                <span class="section-kicker">Talento, disciplina y comunidad</span>
+                <h2 id="proyectos-heading">Proyectos extracurriculares</h2>
+                <p>La banda, las cachiporras, la danza y los equipos deportivos permiten explorar intereses, adquirir disciplina y representar a CEFRAM en presentaciones y encuentros.</p>
+            </div>
+
+            <div class="activity-gallery extracurricular-gallery">
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-banda.webp" alt="Integrantes de la Banda de Paz de CEFRAM durante una presentación" loading="lazy" decoding="async">
+                    <figcaption>Banda de Paz</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-cachiporras.webp" alt="Estudiantes del grupo de cachiporras de CEFRAM" loading="lazy" decoding="async">
+                    <figcaption>Cachiporras y aristas</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-danza.webp" alt="Estudiantes de CEFRAM en una presentación de danza folclórica" loading="lazy" decoding="async">
+                    <figcaption>Grupo de Danza</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-basquetbol.webp" alt="Equipo de básquetbol de CEFRAM durante un partido" loading="lazy" decoding="async">
+                    <figcaption>Básquetbol</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-futbol.webp" alt="Estudiantes de CEFRAM jugando fútbol" loading="lazy" decoding="async">
+                    <figcaption>Fútbol</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-voleibol.webp" alt="Equipo de voleibol de CEFRAM durante un juego" loading="lazy" decoding="async">
+                    <figcaption>Voleibol</figcaption>
+                </figure>
+            </div>
+
+            <div class="extracurricular-details">
+                <article class="extracurricular-detail">
+                    <h3>Banda de Paz</h3>
+                    <p>Desarrolla habilidades musicales, coordinación, disciplina y trabajo en equipo. Cuenta con secciones de percusión, liras y vientos para presentaciones institucionales y desfiles.</p>
+                    <ul>
+                        <li>Ensayos: lunes, miércoles y viernes de 2:00 p. m. a 5:00 p. m.</li>
+                        <li>También ensaya los sábados de 8:00 a. m. a 12:00 p. m.</li>
+                    </ul>
+                </article>
+                <article class="extracurricular-detail">
+                    <h3>Cachiporras y aristas</h3>
+                    <p>Fortalece coordinación, ritmo, expresión corporal y trabajo en equipo mediante la preparación de coreografías y presentaciones.</p>
+                    <ul>
+                        <li>Ensayos: sábados de 1:00 p. m. a 5:30 p. m.</li>
+                        <li>Se requiere compromiso, disciplina y asistencia a los ensayos.</li>
+                    </ul>
+                </article>
+                <article class="extracurricular-detail">
+                    <h3>Grupo de Danza</h3>
+                    <p>Un espacio para desarrollar creatividad, coordinación y expresión artística en modalidades folclóricas y modernas.</p>
+                    <ul>
+                        <li>Ensayos: sábados de 1:00 p. m. a 5:30 p. m.</li>
+                        <li>Participa en desfiles, competencias y actos escolares.</li>
+                    </ul>
+                </article>
+                <article class="extracurricular-detail">
+                    <h3>Deportes</h3>
+                    <p>Fútbol, básquetbol y voleibol promueven la actividad física, la comunicación y el compañerismo.</p>
+                    <ul>
+                        <li>Prácticas: sábados de 8:00 a. m. a 12:00 p. m.</li>
+                        <li>Las categorías y actividades varían según la disciplina.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="activity-section extracurricular-group civic-section" aria-labelledby="encuentros-heading">
+            <div class="activity-heading">
+                <span class="section-kicker">Presentaciones y experiencias</span>
+                <h2 id="encuentros-heading">Competencias, festivales y desfiles</h2>
+                <p>Durante el año, los grupos participan en competencias de bandas, festivales y celebraciones cívicas. Las fotografías y videos muestran algunos de esos momentos.</p>
+            </div>
+            <div class="activity-gallery">
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-competencia-1.webp" alt="Integrantes de una banda estudiantil durante una competencia" loading="lazy" decoding="async">
+                    <figcaption>Presentación de banda</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-competencia-2.webp" alt="Estudiantes participantes en una competencia artística" loading="lazy" decoding="async">
+                    <figcaption>Participación estudiantil</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-competencia-3.webp" alt="Estudiante de CEFRAM en una presentación de danza" loading="lazy" decoding="async">
+                    <figcaption>Presentación de danza</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-competencia-4.webp" alt="Integrantes de la banda en una competencia" loading="lazy" decoding="async">
+                    <figcaption>Encuentro de bandas</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-competencia-5.webp" alt="Banda escolar durante una presentación ante el público" loading="lazy" decoding="async">
+                    <figcaption>Presentación ante la comunidad</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-desfile-1.webp" alt="Estudiantes de CEFRAM participan en un desfile cívico" loading="lazy" decoding="async">
+                    <figcaption>Desfile cívico</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-desfile-2.webp" alt="Comunidad educativa de CEFRAM durante un desfile" loading="lazy" decoding="async">
+                    <figcaption>Comunidad educativa</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-desfile-3.webp" alt="Estudiantes de danza participan en un desfile" loading="lazy" decoding="async">
+                    <figcaption>Grupo de danza en el desfile</figcaption>
+                </figure>
+                <figure class="photo-slot">
+                    <img src="assets/img/extracurricular-desfile-4.webp" alt="Presentación de danza folclórica durante un desfile" loading="lazy" decoding="async">
+                    <figcaption>Danza folclórica</figcaption>
+                </figure>
+            </div>
+            <div class="extracurricular-videos">
+                <figure>
+                    <video controls preload="metadata" poster="assets/img/extracurricular-danza.webp">
+                        <source src="assets/img/extracurricular-desfile-independencia.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                    <figcaption>Desfile cívico de Independencia</figcaption>
+                </figure>
+                <figure>
+                    <video controls preload="metadata" poster="assets/img/extracurricular-banda.webp">
+                        <source src="assets/img/extracurricular-presentacion-banda.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                    <figcaption>Presentación de la Banda de Paz</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
 
@@ -144,9 +300,9 @@
             </div>
             <div class="footer-col">
                 <h4>Contáctanos</h4>
-                <p class="contact-line"><img src="ubicacion.png" alt="" class="contact-icon"> San Salvador, El Salvador</p>
-                <p class="contact-line"><img src="telefono.png" alt="" class="contact-icon"> +503 2222-0000</p>
-                <p class="contact-line"><img src="correo.png" alt="" class="contact-icon"> info@cefram.edu.sv</p>
+                <p class="contact-line"><img src="assets/sprites/ubicacion.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> San Salvador, El Salvador</p>
+                <p class="contact-line"><img src="assets/sprites/telefono.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> +503 7248-3493</p>
+                <p class="contact-line"><img src="assets/sprites/correo.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> 11532@clases.edu.sv</p>
             </div>
         </div>
         <div class="footer-bottom"><p>&copy; 2026 CEFRAM - Centro Escolar General Francisco Morazán.</p></div>

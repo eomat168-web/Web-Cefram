@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios Educativos</title>
-    <link rel="stylesheet" href="estilos.css">
+    <script>document.documentElement.classList.add('js-loading');</script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="assets/js/cargando.js" defer></script>
 </head>
 <body>
+    <div class="page-skeleton" role="status" aria-label="Cargando página">
+        <div class="skeleton-topbar"></div>
+        <div class="skeleton-brand"><i></i><span><b></b><b></b></span></div>
+        <div class="skeleton-nav"><i></i><i></i><i></i><i></i><i></i></div>
+        <main class="skeleton-content"><div class="skeleton-banner"><i></i><i></i><i></i></div><div class="skeleton-heading"></div><div class="skeleton-copy"><i></i><i></i></div><div class="skeleton-cards"><i></i><i></i><i></i></div></main>
+    </div>
     <!-- Encabezado Principal -->
     <header>
         <div class="logo-container">
@@ -24,16 +32,8 @@
             <li><a href="index.html">INICIO</a></li>
             <li><a href="Quienes Somos.html">QUIÉNES SOMOS</a></li>
             <li><a href="Actividades.html">ACTIVIDADES</a></li>
-            <li class="dropdown">
-                <a href="Servicios Educativos.html" class="dropdown-btn active" aria-current="page">SERVICIOS EDUCATIVOS ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="Educación Basica.html">EDUCACIÓN BÁSICA</a></li>
-                    <li><a href="Bachilleratos.html">BACHILLERATOS</a></li>
-                    <li><a href="Bachillerato_General.html">BACHILLERATO GENERAL</a></li>
-                    <li><a href="Bachillerato-Técnico_Vocacional.html">BACHILLERATO TÉCNICO VOCACIONAL</a></li>
-                    <li><a href="Bachillerato-Técnico-Productivo.html">BACHILLERATO TÉCNICO PRODUCTIVO</a></li>
-                </ul>
-            </li>
+            <li><a href="Autoridades.html">AUTORIDADES</a></li>
+            <li><a href="Servicios Educativos.html" class="active" aria-current="page">SERVICIOS EDUCATIVOS</a></li>
         </ul>
     </nav>
 <!-- Sección de Servicios Educativos -->
@@ -47,7 +47,7 @@
         <div class="grid-servicios">
             <!-- Tarjeta 1: Educación Básica -->
             <div class="tarjeta-servicio">
-                <div class="icono-servicio">🎒</div>
+                <div class="icono-servicio"><img src="assets/sprites/mochila.webp" alt="" loading="lazy" decoding="async"></div>
                 <h3>Educación Básica</h3>
                 <p>Brindamos una formación sólida, enfocada en valores, pensamiento crítico y habilidades clave para el desarrollo integral de cada estudiante.</p>
                 <a href="Educación Basica.html" class="btn-leer-mas">Saber más</a>
@@ -55,7 +55,7 @@
 
             <!-- Tarjeta 2: Bachilleratos -->
             <div class="tarjeta-servicio">
-                <div class="icono-servicio">🎓</div>
+                <div class="icono-servicio"><img src="assets/sprites/birrete.webp" alt="" loading="lazy" decoding="async"></div>
                 <h3>Bachilleratos</h3>
                 <p>Preparamos a nuestros jóvenes para la educación superior y los retos del futuro con opciones generales y técnicas que amplían sus oportunidades.</p>
                 <a href="Bachilleratos.html" class="btn-leer-mas">Saber más</a>
@@ -82,9 +82,9 @@
         </div>
         <div class="footer-col">
             <h4>Contáctanos</h4>
-            <p class="contact-line"><img src="ubicacion.png" alt="" class="contact-icon"> San Salvador, El Salvador</p>
-            <p class="contact-line"><img src="telefono.png" alt="" class="contact-icon"> +503 2222-0000</p>
-            <p class="contact-line"><img src="correo.png" alt="" class="contact-icon"> info@cefram.edu.sv</p>
+            <p class="contact-line"><img src="assets/sprites/ubicacion.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> San Salvador, El Salvador</p>
+            <p class="contact-line"><img src="assets/sprites/telefono.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> +503 7248-3493</p>
+            <p class="contact-line"><img src="assets/sprites/correo.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> 11532@clases.edu.sv</p>
         </div>
     </div>
     <div class="footer-bottom">

@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes Somos - CEFRAM</title>
-    <link rel="stylesheet" href="estilos.css">
+    <script>document.documentElement.classList.add('js-loading');</script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="assets/js/cargando.js" defer></script>
 </head>
 <body>
+    <div class="page-skeleton" role="status" aria-label="Cargando página">
+        <div class="skeleton-topbar"></div>
+        <div class="skeleton-brand"><i></i><span><b></b><b></b></span></div>
+        <div class="skeleton-nav"><i></i><i></i><i></i><i></i><i></i></div>
+        <main class="skeleton-content"><div class="skeleton-banner"><i></i><i></i><i></i></div><div class="skeleton-heading"></div><div class="skeleton-copy"><i></i><i></i></div><div class="skeleton-cards"><i></i><i></i><i></i></div></main>
+    </div>
     <header>
         <div class="logo-container">
             <div class="logo-icon">CE</div>
@@ -22,16 +30,8 @@
             <li><a href="index.html">INICIO</a></li>
             <li><a href="Quienes Somos.html" class="active" aria-current="page">QUIÉNES SOMOS</a></li>
             <li><a href="Actividades.html">ACTIVIDADES</a></li>
-            <li class="dropdown">
-                <a href="Servicios Educativos.html">SERVICIOS EDUCATIVOS ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="Educación Basica.html">EDUCACIÓN BÁSICA</a></li>
-                    <li><a href="Bachilleratos.html">BACHILLERATOS</a></li>
-                    <li><a href="Bachillerato_General.html">BACHILLERATO GENERAL</a></li>
-                    <li><a href="Bachillerato-Técnico_Vocacional.html">BACHILLERATO TÉCNICO VOCACIONAL</a></li>
-                    <li><a href="Bachillerato-Técnico-Productivo.html">BACHILLERATO TÉCNICO PRODUCTIVO</a></li>
-                </ul>
-            </li>
+            <li><a href="Autoridades.html">AUTORIDADES</a></li>
+            <li><a href="Servicios Educativos.html">SERVICIOS EDUCATIVOS</a></li>
         </ul>
     </nav>
 
@@ -43,52 +43,46 @@
     </section>
 
     <main class="page-container about-page">
+        <figure class="about-campus-photo">
+            <img src="assets/img/images.webp" alt="Patio central y edificios del Centro Escolar General Francisco Morazán" loading="lazy" decoding="async">
+            <figcaption>Espacios del Centro Escolar General Francisco Morazán.</figcaption>
+        </figure>
+
+        <figure class="about-emblem">
+            <img src="assets/img/logo2.webp" alt="Emblema del Centro Escolar General Francisco Morazán" loading="lazy" decoding="async">
+        </figure>
+
         <section class="detail-card">
             <span class="section-kicker">Nuestra historia</span>
-            <h2>Una institución con trayectoria</h2>
-            <p>El Centro Escolar General Francisco Morazán, conocido como CEFRAM, forma parte de la vida educativa de San Salvador. A lo largo de más de cinco décadas, generaciones de estudiantes han encontrado aquí un espacio para aprender, desarrollar sus capacidades y prepararse para nuevos retos.</p>
-            <p>Su historia continúa construyéndose con el trabajo de estudiantes, docentes, familias y personal de la institución. Cada generación aporta nuevas experiencias y mantiene vivo el compromiso de educar y servir a la comunidad.</p>
-            <p class="history-note">La fecha exacta de fundación no aparece en la información pública consultada.</p>
+            <h2>Una institución con trayectoria y raíces</h2>
+            <p>El Centro Escolar General Francisco Morazán, conocido como CEFRAM, forma parte de la vida educativa de San Salvador. Durante más de cinco décadas, generaciones de estudiantes han encontrado en la institución un espacio para aprender, desarrollar sus capacidades y prepararse para nuevos retos.</p>
+            <p>El nombre de la institución honra al General Francisco Morazán, figura histórica centroamericana del siglo XIX que defendió la unión de Centroamérica. Su recuerdo representa una invitación a valorar la educación, el compromiso cívico y el aporte de cada persona a su comunidad.</p>
+            <p>La historia de CEFRAM también se construye día a día con estudiantes, docentes, familias y personal educativo. Cada generación suma experiencias y contribuye a mantener vivo el compromiso de educar y acompañar a la comunidad.</p>
         </section>
 
-        <section class="cycles-section">
-            <h2>El legado que compartimos</h2>
-            <div class="cycles-grid">
-                <article class="cycle-box">
-                    <h3>Aprendizaje para la vida</h3>
-                    <p>El legado de CEFRAM se refleja en los conocimientos, habilidades y experiencias que sus estudiantes llevan consigo al continuar sus estudios y participar en la sociedad.</p>
-                </article>
-                <article class="cycle-box">
-                    <h3>Identidad y comunidad</h3>
-                    <p>Las actividades escolares, las tradiciones cívicas y el trabajo compartido fortalecen el sentido de pertenencia y el vínculo entre la institución y las familias.</p>
-                </article>
-                <article class="cycle-box">
-                    <h3>Compromiso que permanece</h3>
-                    <p>Generación tras generación, la comunidad educativa aporta al crecimiento de la institución y al futuro de quienes pasan por sus aulas.</p>
-                </article>
-            </div>
+        <section class="detail-card">
+            <span class="section-kicker">Nuestro compromiso</span>
+            <h2>Misión</h2>
+            <p>Ofrecer una enseñanza crítica, práctica y de calidad académica y humana. Promovemos principios morales y cívicos respaldados por el uso de la tecnología para posicionarnos entre las principales instituciones del país.</p>
         </section>
 
-        <section class="cycles-section values-section">
-            <h2>Valores que nos guían</h2>
-            <div class="values-list">
-                <article class="value-item">
-                    <h3>Respeto</h3>
-                    <p>Reconocemos la dignidad de cada persona y promovemos una convivencia cordial.</p>
-                </article>
-                <article class="value-item">
-                    <h3>Responsabilidad</h3>
-                    <p>Asumimos con compromiso nuestras tareas y el cuidado de la comunidad.</p>
-                </article>
-                <article class="value-item">
-                    <h3>Disciplina</h3>
-                    <p>Trabajamos con constancia para alcanzar nuestras metas y aprender cada día.</p>
-                </article>
-                <article class="value-item">
-                    <h3>Identidad</h3>
-                    <p>Valoramos nuestra historia, nuestras tradiciones y el orgullo de pertenecer a CEFRAM.</p>
-                </article>
-            </div>
+        <section class="detail-card">
+            <span class="section-kicker">Hacia dónde vamos</span>
+            <h2>Visión</h2>
+            <p>Ser una institución líder en la aplicación de métodos innovadores con apoyo tecnológico, orientada a la formación integral de mujeres preparadas para integrarse al ámbito profesional y productivo como agentes de cambio social.</p>
+        </section>
+
+        <section class="detail-card">
+            <span class="section-kicker">Nuestra comunidad</span>
+            <h2>Aprendizaje que trasciende las aulas</h2>
+            <p>En CEFRAM, aprender significa adquirir conocimientos y habilidades, descubrir intereses y prepararse para participar en la sociedad. La convivencia escolar, las actividades y el trabajo compartido con las familias forman parte de esa experiencia.</p>
+            <p>El legado de la institución vive en las oportunidades que cada generación encuentra y en el vínculo que estudiantes, familias y personal mantienen con su comunidad educativa.</p>
+        </section>
+
+        <section class="detail-card values-section">
+            <span class="section-kicker">Nuestra guía formativa</span>
+            <h2>Ideario y valores</h2>
+            <p>Impulsamos el desarrollo de las estudiantes basándonos en la integridad, la comunicación, el trabajo en equipo, la conciencia ecológica, la responsabilidad, la solidaridad, el civismo, el liderazgo, la creatividad, la bondad, la sinceridad, la tolerancia, la gratitud y el respeto.</p>
         </section>
 
         <div class="action-bar">
@@ -114,9 +108,9 @@
             </div>
             <div class="footer-col">
                 <h4>Contáctanos</h4>
-                <p class="contact-line"><img src="ubicacion.png" alt="" class="contact-icon"> San Salvador, El Salvador</p>
-                <p class="contact-line"><img src="telefono.png" alt="" class="contact-icon"> +503 2222-0000</p>
-                <p class="contact-line"><img src="correo.png" alt="" class="contact-icon"> info@cefram.edu.sv</p>
+                <p class="contact-line"><img src="assets/sprites/ubicacion.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> San Salvador, El Salvador</p>
+                <p class="contact-line"><img src="assets/sprites/telefono.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> +503 7248-3493</p>
+                <p class="contact-line"><img src="assets/sprites/correo.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> 11532@clases.edu.sv</p>
             </div>
         </div>
         <div class="footer-bottom"><p>&copy; 2026 CEFRAM - Centro Escolar General Francisco Morazán.</p></div>

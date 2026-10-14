@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educación Básica - CEFRAM</title>
-    <link rel="stylesheet" href="estilos.css">
+    <script>document.documentElement.classList.add('js-loading');</script>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="assets/js/cargando.js" defer></script>
 </head>
 <body>
+    <div class="page-skeleton" role="status" aria-label="Cargando página">
+        <div class="skeleton-topbar"></div>
+        <div class="skeleton-brand"><i></i><span><b></b><b></b></span></div>
+        <div class="skeleton-nav"><i></i><i></i><i></i><i></i><i></i></div>
+        <main class="skeleton-content"><div class="skeleton-banner"><i></i><i></i><i></i></div><div class="skeleton-heading"></div><div class="skeleton-copy"><i></i><i></i></div><div class="skeleton-cards"><i></i><i></i><i></i></div></main>
+    </div>
 
     <!-- Header Principal -->
     <header class="header">
@@ -25,23 +33,15 @@
             <li><a href="index.html">INICIO</a></li>
             <li><a href="Quienes Somos.html">QUIÉNES SOMOS</a></li>
             <li><a href="Actividades.html">ACTIVIDADES</a></li>
-            <li class="dropdown">
-                <a href="Servicios Educativos.html" class="active">SERVICIOS EDUCATIVOS ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="Educación Basica.html" class="sub-active">EDUCACIÓN BÁSICA</a></li>
-                    <li><a href="Bachilleratos.html">BACHILLERATOS</a></li>
-                    <li><a href="Bachillerato_General.html">BACHILLERATO GENERAL</a></li>
-                    <li><a href="Bachillerato-Técnico_Vocacional.html">BACHILLERATO TÉCNICO VOCACIONAL</a></li>
-                    <li><a href="Bachillerato-Técnico-Productivo.html">BACHILLERATO TÉCNICO PRODUCTIVO</a></li>
-                </ul>
-            </li>
+            <li><a href="Autoridades.html">AUTORIDADES</a></li>
+            <li><a href="Servicios Educativos.html" class="active">SERVICIOS EDUCATIVOS</a></li>
         </ul>
     </nav>
 
     <!-- Banner Principal de la Página -->
     <section class="page-banner">
         <div class="banner-content">
-            <span class="page-icon">🎒</span>
+            <span class="page-icon"><img src="assets/sprites/mochila.webp" alt=""></span>
             <h1>Educación Básica</h1>
             <p>Formación integral en valores, pensamiento crítico y habilidades clave desde 7.º hasta 9.º grado.</p>
         </div>
@@ -69,6 +69,17 @@
                     <div class="cycle-badge">III</div>
                     <h3>III Ciclo (7.º a 9.º Grado)</h3>
                     <p>Desarrollo del pensamiento crítico, proyectos científicos, responsabilidad social y preparación previa al bachillerato. Se promueven hábitos de estudio y la participación activa en el aprendizaje.</p>
+                    <div class="cycle-gallery" aria-label="Actividades de estudiantes de III Ciclo">
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/tercer-ciclo-clase-1.webp" alt="Estudiantes de tercer ciclo trabajando en computadoras durante una clase" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/tercer-ciclo-clase-2.webp" alt="Estudiantes de tercer ciclo participando en una clase" loading="lazy" decoding="async">
+                        </figure>
+                        <figure class="contenedor-foto">
+                            <img src="assets/img/tercer-ciclo-clase-3.webp" alt="Estudiantes de tercer ciclo atendiendo una explicación en clase" loading="lazy" decoding="async">
+                        </figure>
+                    </div>
                 </div>
 
             </div>
@@ -77,7 +88,7 @@
         <!-- Navegación Inferior / Acciones -->
         <div class="action-bar">
             <a href="Servicios Educativos.html" class="btn-back">← Volver a Servicios Educativos</a>
-            <a href="mailto:info@cefram.edu.sv" class="btn-primary">Más Información</a>
+            <a href="mailto:11532@clases.edu.sv" class="btn-primary">Más Información</a>
         </div>
 
     </main>
@@ -100,9 +111,9 @@
             </div>
             <div class="footer-col">
                 <h4>Contáctanos</h4>
-                <p class="contact-line"><img src="ubicacion.png" alt="" class="contact-icon"> San Salvador, El Salvador</p>
-                <p class="contact-line"><img src="telefono.png" alt="" class="contact-icon"> +503 2222-0000</p>
-                <p class="contact-line"><img src="correo.png" alt="" class="contact-icon"> info@cefram.edu.sv</p>
+                <p class="contact-line"><img src="assets/sprites/ubicacion.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> San Salvador, El Salvador</p>
+                <p class="contact-line"><img src="assets/sprites/telefono.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> +503 7248-3493</p>
+                <p class="contact-line"><img src="assets/sprites/correo.webp" alt="" class="contact-icon" loading="lazy" decoding="async"> 11532@clases.edu.sv</p>
             </div>
         </div>
         <div class="footer-bottom">
