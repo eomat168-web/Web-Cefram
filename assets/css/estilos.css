@@ -2229,6 +2229,11 @@ body:not(.home-page) .galeria-especialidad h4 {
 
 body:not(.home-page) .galeria-especialidad .contenedor-foto { height: 250px; }
 
+body:not(.home-page):has(#contable-titulo) .galeria-especialidad .grid-fotos {
+  grid-template-columns: minmax(0, 420px);
+  justify-content: center;
+}
+
 body:not(.home-page) .espacios-imagenes {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
