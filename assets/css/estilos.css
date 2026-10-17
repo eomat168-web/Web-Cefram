@@ -2234,7 +2234,7 @@ body:not(.home-page) .galeria-especialidad .contenedor-foto:has(img[src*="IMG_"]
   aspect-ratio: 3 / 4;
 }
 
-body:not(.home-page):has(#contable-titulo) .galeria-especialidad .grid-fotos {
+body:not(.home-page) .galeria-contable .grid-fotos {
   grid-template-columns: minmax(0, 420px);
   justify-content: center;
 }
